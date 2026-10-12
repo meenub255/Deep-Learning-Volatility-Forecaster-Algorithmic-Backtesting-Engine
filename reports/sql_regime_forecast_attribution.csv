@@ -1,0 +1,4 @@
+volatility_regime,sample_days,avg_realized_vol_pct,avg_predicted_vol_pct,pytorch_mae_pct,garch_mae_pct,mae_improvement_vs_garch_pct,quantile_coverage_pct
+Low-Vol Expansion,1212,20.95,21.42,3.007,3.368,10.72,98.51
+Normal Rotational,1384,25.6,26.32,3.603,4.282,15.87,96.53
+High-Vol Stress,866,31.11,32.01,4.286,5.569,23.04,93.3

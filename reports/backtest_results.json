@@ -1,0 +1,177 @@
+{
+  "forecast_evaluation": {
+    "pytorch_rmse": 0.045,
+    "garch_rmse": 0.0559,
+    "rmse_improvement_pct": 19.47,
+    "pytorch_mae": 0.0357,
+    "garch_mae": 0.0428,
+    "mae_improvement_pct": 16.78,
+    "pytorch_qlike": -1.7429,
+    "garch_qlike": -1.6914,
+    "qlike_improvement_pct": 3.04,
+    "quantile_80_coverage_pct": 96.42,
+    "directional_auc_acc_pct": 57.77
+  },
+  "strategies": {
+    "pytorch_vol_target_alpha": {
+      "run_id": "PYTORCH_VOL_ALPHA",
+      "strategy_name": "PyTorch Temporal-Attention Vol-Target Alpha",
+      "start_date": "2024-01-08",
+      "end_date": "2026-03-24",
+      "initial_capital": 1000000.0,
+      "final_equity": 1655515.02,
+      "total_return_pct": 65.55,
+      "cagr_pct": 24.68,
+      "annualized_vol_pct": 13.4,
+      "sharpe_ratio": 1.42,
+      "sortino_ratio": 1.53,
+      "calmar_ratio": 2.08,
+      "max_drawdown_pct": -11.85,
+      "var_95_pct": -1.17,
+      "cvar_95_pct": -1.96,
+      "win_rate_pct": 54.34,
+      "profit_factor": 1.39,
+      "alpha_annual_pct": 8.65,
+      "beta": 0.51,
+      "information_ratio": -0.09,
+      "total_trades": 414,
+      "total_costs_usd": 10003.05
+    },
+    "garch_risk_parity_baseline": {
+      "run_id": "GARCH_RISK_PARITY",
+      "strategy_name": "GARCH(1,1) Risk-Parity Baseline",
+      "start_date": "2024-01-08",
+      "end_date": "2026-03-24",
+      "initial_capital": 1000000.0,
+      "final_equity": 1675104.5,
+      "total_return_pct": 67.51,
+      "cagr_pct": 25.32,
+      "annualized_vol_pct": 20.63,
+      "sharpe_ratio": 1.01,
+      "sortino_ratio": 1.01,
+      "calmar_ratio": 0.77,
+      "max_drawdown_pct": -32.77,
+      "var_95_pct": -2.0,
+      "cvar_95_pct": -2.66,
+      "win_rate_pct": 52.95,
+      "profit_factor": 1.21,
+      "alpha_annual_pct": 0.19,
+      "beta": 1.02,
+      "information_ratio": 0.21,
+      "total_trades": 230,
+      "total_costs_usd": 2016.36
+    },
+    "nasdaq_equal_weight_benchmark": {
+      "run_id": "NASDAQ_EW_BENCHMARK",
+      "strategy_name": "Nasdaq-100 Equal-Weight Benchmark",
+      "start_date": "2024-01-08",
+      "end_date": "2026-03-24",
+      "initial_capital": 1000000.0,
+      "final_equity": 1659046.34,
+      "total_return_pct": 65.9,
+      "cagr_pct": 24.79,
+      "annualized_vol_pct": 20.15,
+      "sharpe_ratio": 1.01,
+      "sortino_ratio": 1.01,
+      "calmar_ratio": 0.77,
+      "max_drawdown_pct": -32.17,
+      "var_95_pct": -2.0,
+      "cvar_95_pct": -2.63,
+      "win_rate_pct": 52.95,
+      "profit_factor": 1.21,
+      "alpha_annual_pct": 0.0,
+      "beta": 1.0,
+      "information_ratio": 0.0,
+      "total_trades": 6,
+      "total_costs_usd": 190.51
+    }
+  },
+  "sql_window_market_analytics": [
+    {
+      "symbol": "AAPL",
+      "sector": "Consumer Technology",
+      "trading_days": 1889,
+      "annualized_return_pct": 37.29,
+      "max_historical_drawdown_pct": -36.34,
+      "avg_effective_spread_bps": 1.34,
+      "max_volume_surge_multiple": 1.98
+    },
+    {
+      "symbol": "NVDA",
+      "sector": "Semiconductors",
+      "trading_days": 1889,
+      "annualized_return_pct": 32.99,
+      "max_historical_drawdown_pct": -60.41,
+      "avg_effective_spread_bps": 2.02,
+      "max_volume_surge_multiple": 1.97
+    },
+    {
+      "symbol": "MSFT",
+      "sector": "Enterprise Cloud & AI",
+      "trading_days": 1889,
+      "annualized_return_pct": 29.36,
+      "max_historical_drawdown_pct": -39.08,
+      "avg_effective_spread_bps": 1.33,
+      "max_volume_surge_multiple": 2.01
+    },
+    {
+      "symbol": "AMZN",
+      "sector": "Cloud & E-Commerce",
+      "trading_days": 1889,
+      "annualized_return_pct": 27.23,
+      "max_historical_drawdown_pct": -42.56,
+      "avg_effective_spread_bps": 1.66,
+      "max_volume_surge_multiple": 1.91
+    },
+    {
+      "symbol": "QQQ",
+      "sector": "Index ETF",
+      "trading_days": 1889,
+      "annualized_return_pct": 21.9,
+      "max_historical_drawdown_pct": -39.98,
+      "avg_effective_spread_bps": 1.17,
+      "max_volume_surge_multiple": 2.15
+    },
+    {
+      "symbol": "META",
+      "sector": "Digital Platforms & AI",
+      "trading_days": 1889,
+      "annualized_return_pct": 19.9,
+      "max_historical_drawdown_pct": -57.8,
+      "avg_effective_spread_bps": 1.83,
+      "max_volume_surge_multiple": 2.13
+    }
+  ],
+  "sql_regime_forecast_attribution": [
+    {
+      "volatility_regime": "Low-Vol Expansion",
+      "sample_days": 1212,
+      "avg_realized_vol_pct": 20.95,
+      "avg_predicted_vol_pct": 21.42,
+      "pytorch_mae_pct": 3.007,
+      "garch_mae_pct": 3.368,
+      "mae_improvement_vs_garch_pct": 10.72,
+      "quantile_coverage_pct": 98.51
+    },
+    {
+      "volatility_regime": "Normal Rotational",
+      "sample_days": 1384,
+      "avg_realized_vol_pct": 25.6,
+      "avg_predicted_vol_pct": 26.32,
+      "pytorch_mae_pct": 3.603,
+      "garch_mae_pct": 4.282,
+      "mae_improvement_vs_garch_pct": 15.87,
+      "quantile_coverage_pct": 96.53
+    },
+    {
+      "volatility_regime": "High-Vol Stress",
+      "sample_days": 866,
+      "avg_realized_vol_pct": 31.11,
+      "avg_predicted_vol_pct": 32.01,
+      "pytorch_mae_pct": 4.286,
+      "garch_mae_pct": 5.569,
+      "mae_improvement_vs_garch_pct": 23.04,
+      "quantile_coverage_pct": 93.3
+    }
+  ]
+}

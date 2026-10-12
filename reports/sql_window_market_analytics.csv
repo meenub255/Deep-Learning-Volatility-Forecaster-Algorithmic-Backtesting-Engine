@@ -1,0 +1,7 @@
+symbol,sector,trading_days,annualized_return_pct,max_historical_drawdown_pct,avg_effective_spread_bps,max_volume_surge_multiple
+AAPL,Consumer Technology,1889,37.29,-36.34,1.34,1.98
+NVDA,Semiconductors,1889,32.99,-60.41,2.02,1.97
+MSFT,Enterprise Cloud & AI,1889,29.36,-39.08,1.33,2.01
+AMZN,Cloud & E-Commerce,1889,27.23,-42.56,1.66,1.91
+QQQ,Index ETF,1889,21.9,-39.98,1.17,2.15
+META,Digital Platforms & AI,1889,19.9,-57.8,1.83,2.13
